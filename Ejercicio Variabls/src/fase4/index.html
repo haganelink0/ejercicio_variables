@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Fase 4</title>
+</head>
+<body>
+<p id="display"></p>
+
+<script>
+let nom = "Anton";
+let cognom1 = "Lage";
+let cognom2 = "Magrí";
+let nomICognoms = nom + " " + cognom1 + " " + cognom2;
+let birthYear = 1987;
+let birthMonth = 9;
+let birthDay = 10;
+let birthDate = birthDay + "/" + birthMonth + "/" + birthYear;
+let leapYear = true;
+
+if (birthYear % 4 == 0) {
+	leapYear = true;
+} else {
+	leapYear = false;
+}
+
+document.getElementById("display").innerHTML = "El meu nom es " + nomICognoms + "<br>";
+document.getElementById("display").innerHTML += "Vaig néixer el " + birthDate + "<br>";
+if (leapYear) {
+	document.getElementById("display").innerHTML += "El meu any de naixement és de traspàs.";
+}else {
+	document.getElementById("display").innerHTML += "el meu any de naixement no és de traspàs.";
+}
+</script>
+</body>
+</html>

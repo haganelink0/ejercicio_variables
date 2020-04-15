@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Fase 3</title>
+</head>
+<body>
+<p id="display"></p>
+
+<script>
+let firstLeapYear = 1948;
+let yearOfBirth = 1987;
+let isLeapYear = true;
+let difference = yearOfBirth - firstLeapYear;
+
+for (var i = 0; i < difference; i++) {
+	firstLeapYear++;
+	if (firstLeapYear % 4 == 0) {
+		isLeapYear = true;		
+	} else {
+		isLeapYear = false;			
+	}
+	if (isLeapYear) {
+		document.getElementById("display").innerHTML += "El año " + firstLeapYear + " es bisiesto. <br>";
+	} else {
+		document.getElementById("display").innerHTML += "el año " + firstLeapYear + " no es bisiesto. <br>";
+	}
+}	
+</script>
+</body>
+</html>

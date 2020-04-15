@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Fase 2</title>
+</head>
+<body>
+<p id="display"></p>
+
+<script>
+let firstLeapYear = 1948;
+var amountOfLeaps = 0;
+let yearOfBirth = 1987;
+
+for (var i = 0; i < (yearOfBirth - firstLeapYear); i++) {
+	
+	if ((firstLeapYear+i) % 4 == 0) {
+		amountOfLeaps++;
+	}
+}
+document.getElementById("display").innerHTML = amountOfLeaps;
+</script>
+</body>
+</html>
